@@ -1,0 +1,12 @@
+{
+  "name": "cord-contract-call",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:adi-a11y/cord-contract-call.git",
+  "author": "Adi Bhagavath <adibhagawath@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@polkadot/api": "^12.0.2",
+    "@polkadot/api-contract": "^12.0.2"
+  }
+}
