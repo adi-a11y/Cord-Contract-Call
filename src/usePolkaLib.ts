@@ -15,7 +15,7 @@ async function transfer() {
     const keyring = new Keyring({ type: 'sr25519' });
 
     const account = keyring.addFromUri('<secret>');
-    const gasLimit = await api.derive.balances.account(account.address).then((info) => info.freeBalance.toBigInt());
+    const gasLimit = 6200910 * 4291
     console.log(`\n\naccount: ${account}\n gasLimit: ${gasLimit}\n`)
     const contractCall = contract.tx.transfer({ value: 0, gasLimit }, toAddressForTransfer, value);
     console.log(`\ncontractCall:\n${contractCall}\n`)
